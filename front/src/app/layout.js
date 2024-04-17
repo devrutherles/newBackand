@@ -1,4 +1,5 @@
 import '@/app/global.css'
+import Sidebar from '@/components/Sidbar'
 
 export const metadata = {
     title: 'Laravel',
@@ -6,7 +7,7 @@ export const metadata = {
 const RootLayout = ({ children }) => {
     return (
         <html lang="en">
-            <body className="antialiased">{children}</body>
+            <body>{children}</body>
         </html>
     )
 }

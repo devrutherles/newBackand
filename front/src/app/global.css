@@ -1,5 +1,32 @@
-@import url("https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+
+  --background: #fff
+  
+}
+
+body {
+ background-color: #fff;
+
+    
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+ 
+}
+
+main{
+    background-color: #fff;
+}
+
+
+input{
+  padding: 5px;
+}

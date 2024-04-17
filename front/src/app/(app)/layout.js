@@ -3,6 +3,7 @@
 import { useAuth } from '@/hooks/auth'
 import Navigation from '@/app/(app)/Navigation'
 import Loading from '@/app/(app)/Loading'
+import Sidebar from '@/components/Sidbar'
 
 const AppLayout = ({ children, header }) => {
     const { user } = useAuth({ middleware: 'auth' })
@@ -12,10 +13,17 @@ const AppLayout = ({ children, header }) => {
     }
 
     return (
-        <div className="min-h-screen bg-gray-100">
-            <Navigation user={user} />
+        <div className="min-h-screen">
+          
+     
+            <Sidebar user={user}>
+
 
             <main>{children}</main>
+
+
+            </Sidebar>
+
         </div>
     )
 }
